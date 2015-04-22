@@ -1,4 +1,4 @@
-ComPerformance<br>
+StudentEvaluation System<br>
 ==============
 
 一个使用django1.6开发的学生综合成绩管理平台.
@@ -62,12 +62,3 @@ ComPerformance<br>
     7.登录
 </pre>
 
-<h1>
-安装问题
-</h1>
-<pre>
-关于验证码无法显示问题，可以参考：
-http://www.douban.com/group/topic/12636401/
-http://stackoverflow.com/questions/3544155/need-help-with-a-pil-error-ioerror-decoder-zip-not-available
-http://hi.baidu.com/wbwylbt/item/2f093d3f50433699b90c0326
-</pre>
