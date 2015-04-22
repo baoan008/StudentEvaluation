@@ -1,0 +1,90 @@
+WARNING 2015-04-16 23:03:41 C:\Python27\lib\site-packages\django\core\handlers\base.py base 145 Not Found: / status_code:404
+WARNING 2015-04-16 23:03:41 C:\Python27\lib\site-packages\django\core\handlers\base.py base 145 Not Found: /favicon.ico status_code:404
+WARNING 2015-04-16 23:03:41 C:\Python27\lib\site-packages\django\core\handlers\base.py base 145 Not Found: /favicon.ico status_code:404
+WARNING 2015-04-16 23:04:18 C:\Python27\lib\site-packages\django\core\handlers\base.py base 145 Not Found: / status_code:404
+ERROR 2015-04-22 10:12:10 C:\Python27\lib\site-packages\django\core\handlers\base.py base 226 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\jee-workspace\StudentEvaluation\engine\views.py", line 13, in index
+    }, context_instance=RequestContext(request))
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return self.render_template(self.template, context)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 137, in render_template
+    output = template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "C:\Python27\lib\site-packages\django\template\debug.py", line 78, in render_node
+    return node.render(context)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 509, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 387, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 296, in reverse_dict
+    self._populate()
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 285, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 229, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 32, in wrapper
+    result = func(*args)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 96, in get_callable
+    mod = import_module(mod_name)
+  File "C:\Python27\lib\site-packages\django\utils\importlib.py", line 40, in import_module
+    __import__(name)
+  File "D:\jee-workspace\StudentEvaluation\engine\grade.py", line 13, in <module>
+    from Comperformance import settings
+ImportError: No module named Comperformance
+ERROR 2015-04-22 10:53:56 C:\Python27\lib\site-packages\django\core\handlers\base.py base 226 Internal Server Error: /admin/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 215, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 99, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 198, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 358, in index
+    model_dict['admin_url'] = reverse('admin:%s_%s_changelist' % info, current_app=self.name)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 480, in reverse
+    app_list = resolver.app_dict[ns]
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 310, in app_dict
+    self._populate()
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 285, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 229, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 32, in wrapper
+    result = func(*args)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 96, in get_callable
+    mod = import_module(mod_name)
+  File "C:\Python27\lib\site-packages\django\utils\importlib.py", line 40, in import_module
+    __import__(name)
+  File "D:\jee-workspace\StudentEvaluation\engine\grade.py", line 13, in <module>
+    from Comperformance import settings
+ImportError: No module named Comperformance
